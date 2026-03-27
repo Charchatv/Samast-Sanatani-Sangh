@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#faf9f6",
+              "on-tertiary-fixed": "#1c1b1b",
+              "on-primary-fixed-variant": "#7c2e00",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#f2f1ee",
+              "on-surface-variant": "#594238",
+              "inverse-primary": "#ffb595",
+              "primary": "#9e3d00",
+              "surface-variant": "#e3e2e0",
+              "on-primary-fixed": "#351000",
+              "secondary-fixed-dim": "#e3beb8",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#dbdad7",
+              "surface": "#faf9f6",
+              "surface-container": "#efeeeb",
+              "inverse-surface": "#2f312f",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-primary-container": "#fffbff",
+              "tertiary-fixed": "#e5e2e1",
+              "on-secondary-fixed-variant": "#5b403c",
+              "on-surface": "#1a1c1a",
+              "outline-variant": "#e0c0b2",
+              "surface-tint": "#a23f00",
+              "primary-container": "#c64f00",
+              "on-secondary-fixed": "#2b1613",
+              "outline": "#8c7166",
+              "primary-fixed": "#ffdbcd",
+              "primary-fixed-dim": "#ffb595",
+              "on-background": "#1a1c1a",
+              "surface-container-low": "#f4f3f1",
+              "on-tertiary-fixed-variant": "#474746",
+              "secondary-container": "#fed7d0",
+              "secondary-fixed": "#ffdad4",
+              "tertiary": "#5d5c5b",
+              "background": "#faf9f6",
+              "error": "#ba1a1a",
+              "surface-container-highest": "#e3e2e0",
+              "surface-container-high": "#e9e8e5",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "secondary": "#745853",
+              "on-tertiary-container": "#f7feff",
+              "tertiary-container": "#757474",
+              "on-secondary-container": "#795c57",
+              "on-secondary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .serif-italic { font-family: 'Newsreader'; font-style: italic; }
+        .tonal-shift-surface-container-low { background-color: #f4f3f1; }
+        body { background-color: #faf9f6; color: #1a1c1a; font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/20">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm shadow-stone-200/50 dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-[#9e3d00] dark:text-[#ff6b00] tracking-tight">
+                Samast Sanatani Sangh
+            </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#9e3d00] border-b-2 border-[#9e3d00] pb-1 font-medium font-['Newsreader'] italic tracking-wide" href="#">Home</a>
+<a class="text-[#745853] dark:text-stone-400 hover:text-[#9e3d00] transition-colors font-['Newsreader'] italic tracking-wide" href="#">History</a>
+<a class="text-[#745853] dark:text-stone-400 hover:text-[#9e3d00] transition-colors font-['Newsreader'] italic tracking-wide" href="#">Events</a>
+<a class="text-[#745853] dark:text-stone-400 hover:text-[#9e3d00] transition-colors font-['Newsreader'] italic tracking-wide" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md hover:scale-105 active:opacity-80 transition-all font-body text-sm font-semibold tracking-wide">
+                Join Us
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 px-8 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sacred fire ritual" class="w-full h-full object-cover opacity-20 filter grayscale-[0.2]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWUT93WaaWWE58BpIHj1Kr8ibqRIR3jBY1SCgfs0FDaNNPl8PQoOPueNySAPEKb4Se1XFdZJYS2PfoJbK-P8_Lw4zHpDlrESDWkIpGYghW8_DNjEN_2jCjiiISfpEoFb9xPuunwtiU3Yq9Rht5Z3ynUZliQzWSveL869ep7qrL56-K6IsZKOdBOWy5seZ6DAk7ALjixGVB93fGBOwwHx07CtGSWzqRMPs46TNW3coCvyQRo-weCROBOeRt9dAx-rKmRYPp-Q"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<h1 class="text-6xl md:text-8xl font-headline font-light leading-tight tracking-tight text-on-background">
+                        Preserving <span class="serif-italic text-primary">Eternal Wisdom</span>, <br/>
+                        Uniting Every Sanatani.
+                    </h1>
+<p class="text-xl md:text-2xl text-secondary leading-relaxed max-w-2xl font-body font-light">
+                        Samast Sanatani Sangh is dedicated to preserving, promoting, and practicing Sanatan Dharma through spiritual awareness, rituals, and community unity.
+                    </p>
+<div class="pt-4">
+<button class="bg-primary-container text-on-primary-container px-10 py-5 rounded-md text-lg font-bold tracking-tight hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-primary/10">
+                            Join Our Mission
+                        </button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 left-8 flex items-center gap-4 text-outline">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<span class="text-xs font-label uppercase tracking-[0.3em]">Ancient Heritage • Modern Unity</span>
+</div>
+</section>
+<!-- Our Pillars of Dharma -->
+<section class="py-32 px-8 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20 space-y-4">
+<span class="text-primary font-label uppercase tracking-widest text-xs font-bold">The Foundation</span>
+<h2 class="text-5xl font-headline italic">Our Pillars of Dharma</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-6">
+<div class="w-16 h-16 bg-primary/5 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+</div>
+<h3 class="text-3xl font-headline italic">Preservation</h3>
+<p class="text-secondary leading-relaxed">Dedicated to the meticulous archiving and study of Vedic texts, ensuring the sacred words of our ancestors remain untarnished for generations to come.</p>
+<ul class="space-y-3 text-sm font-label uppercase tracking-widest text-outline">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Manuscript Restoration</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Digital Libraries</li>
+</ul>
+</div>
+<div class="space-y-6">
+<div class="w-16 h-16 bg-primary/5 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<h3 class="text-3xl font-headline italic">Education</h3>
+<p class="text-secondary leading-relaxed">Imparting Sanskara through traditional learning methods, bridging the gap between ancient philosophy and contemporary living for the youth.</p>
+<ul class="space-y-3 text-sm font-label uppercase tracking-widest text-outline">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Vedic Schools</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Youth Mentorship</li>
+</ul>
+</div>
+<div class="space-y-6">
+<div class="w-16 h-16 bg-primary/5 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="text-3xl font-headline italic">Community</h3>
+<p class="text-secondary leading-relaxed">Fostering a sense of global unity among Sanatanis, providing a support system that transcends geographical boundaries through shared faith.</p>
+<ul class="space-y-3 text-sm font-label uppercase tracking-widest text-outline">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Global Satsangs</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Social Welfare</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact & Reach -->
+<section class="py-24 px-8 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+<div class="space-y-2">
+<div class="text-5xl font-headline text-primary">50+</div>
+<div class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Years of Tradition</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-headline text-primary">100+</div>
+<div class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Havans Conducted</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-headline text-primary">10k+</div>
+<div class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Dedicated Members</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-headline text-primary">25</div>
+<div class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Global Chapters</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section - Bento Style -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-full">
+<div class="md:col-span-8 bg-surface-container-low p-12 rounded-xl flex flex-col justify-between min-h-[400px] border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-4xl">auto_awesome</span>
+<div>
+<h3 class="text-4xl font-headline mb-4">Spiritual Awareness</h3>
+<p class="text-secondary max-w-md">Illuminating the path of consciousness through the study of sacred texts and the practice of meditation.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary p-12 rounded-xl text-on-primary flex flex-col justify-center items-center text-center shadow-2xl shadow-primary/20">
+<h4 class="text-6xl font-headline mb-4">Unity</h4>
+<p class="font-label uppercase tracking-widest text-sm opacity-80">One Dharma, One Family</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-highest p-12 rounded-xl min-h-[300px] flex flex-col justify-end">
+<h3 class="text-2xl font-headline mb-2 italic text-primary">Sacred Rituals</h3>
+<p class="text-secondary text-sm">Honoring the traditions passed down through millennia with precision and devotion.</p>
+</div>
+<div class="md:col-span-8 relative rounded-xl overflow-hidden min-h-[300px] group">
+<img alt="Spiritual landscape" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmUyDEbwgQdASBKP72a20jFW5Ql7_TrOp4M6eF0OdGI9zwKXxHKkVTNocOhFT9qZXUnxMJCX-O8gFQ-1ECPcuk8krk-WYw9rF7juUlC4Bf6w_5elfCtqe1D940IB9UCZcuL5VmK7nEwD2a5VotYUxhVl-MIs5-jxXy8M9sJnI8sIZF9wM64DiUPySFwwmJRejwdRwGkH_ooPrY-t9bG3VvAlR738nK7_CxNpQIf9PAu8-gn4gIX_0XMBelm8wDuguW6DX1hps"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-12">
+<h3 class="text-3xl font-headline text-white italic">Community Unity in Diversity</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Path Forward -->
+<section class="py-40 px-8 bg-background relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center relative z-10">
+<div class="space-y-10">
+<span class="text-primary font-label uppercase tracking-widest text-xs font-bold">The Vision</span>
+<h2 class="text-5xl md:text-7xl font-headline leading-tight italic">The Path <br/>Forward</h2>
+<p class="text-xl text-secondary leading-relaxed font-light">
+                        Our vision for the modern world is not to return to the past, but to bring the eternal values of Sanatan Dharma into the future. We envision a society where Vedic wisdom guides technology, where spirituality fuels progress, and where every individual lives in harmony with the cosmic order.
+                    </p>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-bold tracking-tight">View Our Roadmap</button>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8">
+<div class="p-8 bg-surface border-l-4 border-primary shadow-sm">
+<h4 class="font-headline text-2xl mb-2 italic">Modern Gurukuls</h4>
+<p class="text-secondary text-sm">Establishing digital-first learning centers for global accessibility.</p>
+</div>
+<div class="p-8 bg-surface border-l-4 border-primary shadow-sm">
+<h4 class="font-headline text-2xl mb-2 italic">Ecological Stewardship</h4>
+<p class="text-secondary text-sm">Applying Vedic principles of nature worship to environmental conservation.</p>
+</div>
+<div class="p-8 bg-surface border-l-4 border-primary shadow-sm">
+<h4 class="font-headline text-2xl mb-2 italic">Global Cultural Exchange</h4>
+<p class="text-secondary text-sm">Promoting Sanatan philosophy as a universal tool for mental peace.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials/Quotes -->
+<section class="py-32 px-8 bg-surface-container-high/30">
+<div class="max-w-5xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div class="relative">
+<span class="material-symbols-outlined text-6xl text-primary/20 absolute -top-10 -left-6">format_quote</span>
+<blockquote class="relative z-10">
+<p class="text-2xl font-headline italic leading-relaxed text-on-surface">"The Sangh is not just an organization; it is a movement to reclaim our spiritual identity in a world that often feels lost. Their work with the youth is particularly inspiring."</p>
+<footer class="mt-8">
+<div class="font-bold text-primary font-label uppercase tracking-widest text-xs">— Swami Dayananda Saraswati</div>
+<div class="text-outline text-xs mt-1">Spiritual Scholar &amp; Mentor</div>
+</footer>
+</blockquote>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined text-6xl text-primary/20 absolute -top-10 -left-6">format_quote</span>
+<blockquote class="relative z-10">
+<p class="text-2xl font-headline italic leading-relaxed text-on-surface">"By preserving the rituals and the language of our Vedas, Samast Sanatani Sangh is ensuring that the flame of eternal truth never goes out."</p>
+<footer class="mt-8">
+<div class="font-bold text-primary font-label uppercase tracking-widest text-xs">— Dr. Anjali Sharma</div>
+<div class="text-outline text-xs mt-1">Historian &amp; Community Elder</div>
+</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Statement Section -->
+<section class="py-40 px-8 bg-background">
+<div class="max-w-4xl mx-auto text-center space-y-12">
+<div class="inline-block px-4 py-1 border border-outline-variant rounded-full text-xs font-label uppercase tracking-widest text-secondary">
+                    Our Calling
+                </div>
+<h2 class="text-5xl md:text-7xl font-headline leading-tight">
+                    A bridge between the <span class="serif-italic">eternal past</span> and an <span class="serif-italic">awakened future</span>.
+                </h2>
+<div class="flex justify-center gap-24 pt-12">
+<div class="text-left">
+<div class="text-primary font-headline text-3xl mb-2">Dharma</div>
+<p class="text-sm text-secondary max-w-[200px]">Upholding the cosmic order through righteous living and duty.</p>
+</div>
+<div class="text-left">
+<div class="text-primary font-headline text-3xl mb-2">Satsang</div>
+<p class="text-sm text-secondary max-w-[200px]">Coming together in truth to elevate collective consciousness.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Canvas -->
+<section class="px-8 pb-20">
+<div class="max-w-7xl mx-auto bg-surface-container-high rounded-2xl overflow-hidden relative p-16 md:p-24 flex flex-col items-center text-center border border-outline-variant/10">
+<div class="absolute top-0 right-0 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]">settings_accessibility</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-headline mb-8 max-w-3xl italic">Ready to walk the path of Sanatan Dharma?</h2>
+<p class="text-secondary text-lg mb-12 max-w-xl font-body">Join a global brotherhood committed to the revival and protection of our ancient heritage.</p>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="bg-primary text-on-primary px-12 py-4 rounded-md font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-primary/20">Get Involved</button>
+<button class="border border-outline text-on-surface px-12 py-4 rounded-md font-bold text-lg hover:bg-surface-container-highest transition-colors">Explore Initiatives</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-20 bg-[#f4f3f1] dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-serif text-[#1a1c1a] dark:text-stone-200">
+                    Samast Sanatani Sangh
+                </div>
+<p class="text-[#745853] dark:text-stone-500 font-['Manrope'] text-sm leading-relaxed max-w-xs">
+                    Preserving eternal wisdom. Uniting hearts across the globe in the light of Sanatan Dharma.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col space-y-4">
+<span class="font-['Manrope'] text-sm uppercase tracking-widest text-[#9e3d00] mb-2 font-bold">Follow</span>
+<a class="text-[#745853] dark:text-stone-500 hover:text-[#9e3d00] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Instagram</a>
+<a class="text-[#745853] dark:text-stone-500 hover:text-[#9e3d00] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Facebook</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Manrope'] text-sm uppercase tracking-widest text-[#9e3d00] mb-2 font-bold">Legal</span>
+<a class="text-[#745853] dark:text-stone-500 hover:text-[#9e3d00] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-[#745853] dark:text-stone-500 hover:text-[#9e3d00] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="flex flex-col items-start md:items-end space-y-8">
+<div class="bg-surface-container-highest p-6 rounded-lg w-full">
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold block mb-4">Newsletter</span>
+<div class="flex border-b border-outline-variant pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-outline font-body" placeholder="Your Email" type="email"/>
+<button class="text-primary">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-16 flex flex-col md:flex-row justify-between items-center opacity-60">
+<p class="font-['Manrope'] text-sm uppercase tracking-widest text-[#745853] dark:text-stone-500">
+                © 2024 Samast Sanatani Sangh. Preserving Eternal Wisdom.
+            </p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-label text-[10px] tracking-widest uppercase">Ancient Lands, Modern Connections</span>
+</div>
+</div>
+</footer>
+</body></html>
