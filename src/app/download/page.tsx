@@ -21,7 +21,7 @@ export default function DownloadPage() {
             </span>
             <h1 className="text-5xl md:text-7xl font-headline font-light leading-tight tracking-tight text-on-background">
               Download <br />
-              <span className="font-headline text-primary">Pushqarna Brahmin App</span>
+              <span className="font-headline text-primary">Pushkarna</span>
             </h1>
           </motion.div>
 
@@ -33,9 +33,13 @@ export default function DownloadPage() {
           >
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-primary-container/50 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-              <button className="relative bg-primary text-on-primary px-16 py-6 rounded-full text-lg font-label font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all shadow-2xl shadow-primary/20">
+              <a
+                href="/app.apk"
+                download="Samast-Sanatani-Sangh.apk"
+                className="relative bg-primary text-on-primary px-16 py-6 rounded-full text-lg font-label font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all shadow-2xl shadow-primary/20 inline-block"
+              >
                 Download Now
-              </button>
+              </a>
             </div>
           </motion.div>
 

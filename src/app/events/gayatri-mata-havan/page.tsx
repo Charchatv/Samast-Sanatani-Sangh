@@ -68,7 +68,7 @@ export default function EventsPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-10">
               <div className="lg:col-span-8">
                 <span className="font-label text-sm uppercase tracking-[0.2em] text-primary">Sacred Gathering</span>
-                <h2 className="font-headline text-5xl md:text-6xl text-on-background mt-4">Havan Mahotsav</h2>
+                <h2 className="font-headline text-5xl md:text-6xl text-on-background mt-4">51 Kundi Maa Gayatri Bhavya Yagya</h2>
               </div>
               <div className="lg:col-span-4 lg:text-right">
                 <div className="inline-flex items-center gap-4 bg-surface-bright px-8 py-4 rounded-full shadow-sm">
