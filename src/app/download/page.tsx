@@ -34,7 +34,9 @@ export default function DownloadPage() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-primary-container/50 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
               <a
-                href="/app.apk"
+                href="https://github.com/Charchatv/Samast-Sanatani-Sangh/releases/download/v1.0.0/app.apk"
+                target="_blank"
+                rel="noopener noreferrer"
                 download="Samast-Sanatani-Sangh.apk"
                 className="relative bg-primary text-on-primary px-16 py-6 rounded-full text-lg font-label font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all shadow-2xl shadow-primary/20 inline-block"
               >
