@@ -79,7 +79,13 @@ export default function AccountDeletion() {
             number once the deletion is complete.
             <br />
             <br />
-            Thank you for being part of our community.
+            Thank you for being part of the{" "}
+            <strong>Pushkarna Brahmin Community</strong>.
+            <br />
+            <br />
+            <span className="text-xs text-gray-400">
+              App developed by Samast Sanatani Sangh
+            </span>
           </p>
         </div>
       </div>
@@ -110,7 +116,8 @@ export default function AccountDeletion() {
           </h1>
           <p className="text-gray-500 text-sm">
             We&apos;re sorry to see you go. Please fill out the form below to
-            request account deletion.
+            request account deletion for your{" "}
+            <strong>Pushkarna Brahmin Community</strong> account.
           </p>
         </div>
 
