@@ -79,6 +79,13 @@ export default function AccountDeletion() {
             number once the deletion is complete.
             <br />
             <br />
+            <strong>What will be deleted:</strong>
+            <br />
+            Your name, phone number, profile photo, marriage details, bio,
+            preferences, posts, comments, job applications, and all associated
+            data will be permanently removed.
+            <br />
+            <br />
             Thank you for being part of the{" "}
             <strong>Pushkarna Brahmin Community</strong>.
             <br />
@@ -95,6 +102,24 @@ export default function AccountDeletion() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
       <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-8">
+        <div className="text-center mb-2">
+          <h1 className="text-xl font-bold text-gray-800 mb-1">
+            Pushkarna Brahmin Community App
+          </h1>
+          <p className="text-sm text-gray-500 mb-1">by Sugamaya Governance</p>
+          <p className="text-base font-semibold text-red-600 mb-6">
+            Official Account Deletion Page
+          </p>
+        </div>
+
+        <div className="bg-blue-50 border border-blue-300 rounded-lg p-3 mb-6">
+          <p className="text-blue-800 text-xs">
+            This page is operated by <strong>Sugamaya Governance</strong>, the
+            developer of the <strong>Pushkarna Brahmin Community</strong> mobile
+            app available on Google Play.
+          </p>
+        </div>
+
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
@@ -121,7 +146,7 @@ export default function AccountDeletion() {
           </p>
         </div>
 
-        <div className="bg-amber-50 border border-amber-300 rounded-lg p-4 mb-6">
+        <div className="bg-amber-50 border border-amber-300 rounded-lg p-4 mb-4">
           <p className="text-amber-800 text-sm">
             <strong>What happens when you delete your account:</strong>
             <br />
@@ -132,6 +157,29 @@ export default function AccountDeletion() {
             • Your posts, comments, and job applications will be removed
             <br />
             • This action cannot be undone
+          </p>
+        </div>
+
+        <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mb-6">
+          <p className="text-gray-700 text-sm">
+            <strong>Data Retention Note:</strong>
+            <br />
+            After your account is deleted, your data will be permanently removed
+            from our active systems within <strong>48-72 hours</strong>. Backup
+            copies may remain for up to <strong>30 days</strong> before being
+            fully purged, in accordance with our data retention policy.
+            <br />
+            <br />
+            For full details, please review our{" "}
+            <a
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline hover:text-blue-800"
+            >
+              Privacy Policy
+            </a>
+            .
           </p>
         </div>
 
@@ -201,6 +249,41 @@ export default function AccountDeletion() {
             {isSubmitting ? "Submitting..." : "Delete My Account"}
           </button>
         </form>
+
+        <div className="mt-6 pt-4 border-t border-gray-200 text-center">
+          <p className="text-xs text-gray-500 mb-2">
+            Need help? Contact us at{" "}
+            <a
+              href="mailto:contact@ssys.in"
+              className="text-blue-600 underline hover:text-blue-800"
+            >
+              contact@ssys.in
+            </a>
+          </p>
+          <p className="text-xs text-gray-400">
+            <a
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline hover:text-blue-800"
+            >
+              Privacy Policy
+            </a>{" "}
+            ·{" "}
+            <a
+              href="/terms-n-condition"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline hover:text-blue-800"
+            >
+              Terms of Service
+            </a>
+          </p>
+          <p className="text-xs text-gray-400 mt-2">
+            © {new Date().getFullYear()} Sugamaya Governance ·{" "}
+            <strong>Pushkarna Brahmin Community App</strong>
+          </p>
+        </div>
       </div>
     </div>
   );
